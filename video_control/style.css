@@ -1,0 +1,115 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	zoom:1;
+}
+
+/* Utilities */
+
+
+/* Rebuild of common elements */
+
+#wrap{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+	padding-bottom:1em;
+}
+
+/* typography */
+
+p,li{font-size:1.1em;}
+small{font-size:1em;}
+
+h1,h2,h3,p,li{margin:0.5em 0 0 0;}
+
+li{ list-style-type:none; }
+
+a{text-decoration:none;
+	color:#0072bc;
+}
+a:hover{
+	color:#f90;
+	transition: color 0.5s;
+}
+
+h3.warning{
+	text-align:center;
+	font-size:1.0em;
+        font-weight:400;
+        color:#303030;
+	background:#f90;
+}
+
+
+button{
+	display:inline-block;
+	color:#fff;
+	border:none;
+	border-radius:4px;
+	padding:0.4em 1em;
+	margin:0 0.5em 0 0;
+	cursor:pointer;
+	font-size:0em;
+}
+
+button:hover{
+	background:#e90;
+	transition: background 0.1s;
+}
+
+.updatedField{
+	display:inline-block;
+	min-width:140px;
+	background:#ddd;
+	border-radius:4px;
+	padding:0.2em 1em;
+	margin-right:0.5em;
+	font-size:1em;
+}
+
+#videoStream{
+	background:#ddd;
+	padding:10px 0;
+	text-align:center;
+}
+#videoStream img{
+	height:480px;
+	width:auto;
+	min-width:640px; /* let widescreen do it's thing */
+	background:#fff;
+	text-align:center;
+	display:block;
+	margin:0 auto;
+	color:#999;
+	font-size:0.8em;
+	line-height:4em;
+}

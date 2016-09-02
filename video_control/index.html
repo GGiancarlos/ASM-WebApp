@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      	<title>Hands Free Video Player</title>
+	<link rel="stylesheet" href="./style.css">
+     	 <style type="text/css">
+		body, html {
+        			margin: 0; padding: 0; height: 100%; overflow: hidden;
+        }
+	</style>
+    </head>
+    <body>
+    	<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    	<div id="player"></div>
+
+			<div id="top" style='display:none; position:absolute; left:0; top:0; width:100%; overflow:hidden; background-color:#ffffff; z-index:1;'>
+				<center>
+					<font color="white">YouTube video URL:</font>
+					<input type="text" id="youtube_addr_txt" style='width:30%' >
+					<button type='button' class='xlInputButton' style='display:inline; margin: 3px 3px 3px 3px;' id='youtube_addr_btn' alt='go' onclick='loadYoutubeVideo();'><img src="resources/video-button.png" id='button_img' height="25px" width="30px" align="middle"></button>
+				</center>
+			</div>
+			<div id="descr" style='display:block; position:absolute; left:0; top:0; width:100%; height:100%; overflow:hidden; background-color:#ffffff; z-index:0;'>
+				<div id='xLabsDivOuter' style='position:fixed; left:0; top:10%; width:100%;'>
+					<center>
+                       <span id='xLabsDivText' style='font-size:37px; vertical-align:middle; font-family:Arial; display:inline; '>
+							Control Video with Head Pose
+						</span>
+                        <ul>
+                            <li><a href="../index.html">Home Page</a></li>
+                            <li><a href="../newASM.html">Introduction to Newly Trained ASM Using Stasm</a></li>
+                            <li><a href="index.html">Video Controlling with Head Pose</a></li>
+                            <li><a href="../gaze_track/gazeTrack.html">Gaze Tracking</a></li>
+                        </ul>
+					</center>
+				</div>
+			</div>
+			
+
+			<div id="landing" style="display:none">
+				<div id='xLabsDivOuter' style='position:fixed; left:0; top:40%; width:100%;'>
+					<center>
+						<span id='xLabsDivText' style='font-size:25px; vertical-align:middle; font-family:Arial; display:inline; line-height: 50px;'>
+						<ul>
+						    Instruction:
+						</ul>
+						<ul>
+						    Enter any <a href="https://www.youtube.com">YouTube</a> URL into the box above and click play icon
+						</ul>
+						<ul>
+						    Rotate your head left to rewind, right to fast-forward
+						</ul>
+						<ul>
+						    Video pauses when you aren't facing the screen
+						</ul>
+							
+						</span>
+					</center>
+				</div>
+			</div>
+
+			<div id="playerButton" style="display:none">
+				<div id='xLabsDivOuter' style='position:fixed; left:0; top:40%; width:100%;'>
+					<center>
+						<img id='playerButtonImg' src='' style='vertical-align:middle; width:10%; opacity:0.4;'/>
+					</center>
+				</div>
+			</div>
+        <footer role="contentinfo">
+            <p id="authorinfo">
+                &copy;Zeming Li<br>
+                <a href="https://github.com/zemli/ASM-WebApp">GitHub Link</a><br>
+            </p>
+            <p id="reference">
+                Reference:<br>
+                <a href="http://www.milbo.users.sonic.net/stasm/">ASM with STASM</a>&nbsp;&nbsp;
+                <a href="https://xlabsgaze.com/">Xlabs</a>
+            </p>
+        </footer>
+		<script src="../api/xlabs.js"></script>
+		<script type="text/javascript" src="util.js"></script>
+		<script type="text/javascript" src="errors.js"></script>
+	    <script type="text/javascript" src="player.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
