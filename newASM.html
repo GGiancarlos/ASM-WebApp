@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8" lang="en">
+        <title>Intro to newly trained ASM</title>
+        <link href="CSS/style.css" type="text/css" rel="stylesheet">
+        <style type="text/css">
+            article{
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+       <header role="banner">
+           <h1>Introduction to Newly Trained ASM Using Stasm and Helen Dataset</h1>
+           <header role="banner">
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Home Page</a>
+                    <li><a href="newASM.html">Introduction to Newly Trained ASM Using Stasm</a></li>
+                    <li><a href="video_control/index.html">Video Controlling with Head Pose</a></li>
+                    <li><a href="gaze_track/gazeTrack.html">Gaze Tracking</a></li>
+                </ul>
+            </nav>
+        </header>
+       </header>
+       <main role="main">
+           <article role="article">
+               <header>
+                   <p>This WebApp is a part of my M.Eng. project in the University of Toronto. This page briefly introduces the ASM and newly trianed ASM in my project that can be utilized in a wide branch of applications.</p>
+               </header>
+               <p>
+                   The active shape model (ASM) is considered as a widely used method for facial feature detection, and it defines a set of labeled facial landmarks that form a face shape. In the early version, it combines grey-scale information for extracting a one-dimensional gradient profile around each landmark to describe surrounding texture. The active shape model is considered as a widely used method for facial feature detection, and it defines a set of labeled facial landmarks that form a face shape. In the early version, it combines grey-scale information for extracting a one-dimensional gradient profile around each landmark to describe surrounding texture.
+               </p>
+               <p>
+                   But this approach fails to have a satisfactory precision when it comes to complex facial texture structure like eye corner or boundary. S. Milborrow et al. They proposed an optimized ASM called Stasm that introduced a new template matching method and an adaptive descriptor matching method.However, the dataset used for training ASM is also a key factor impacting the performance, especially for practical applications. Besides, as the development of image processing and recognition, there is a incresing need for high-resolution images and the model with more landmarks.
+               </p>
+               <p>
+                   The Helen dataset created for training reliable, accurate algorithm meets the requirement of both variation of appearance and high resolution. The Helen dataset consists 2000 training images and 330 test images. For comparing the performance between two models, the new model trained on the Helen dataset is evaluated on BioID dataset. Meanwhile, some changes and optimizations of the source code of Stasm are made for 194 landmarks shape and high-resolution images in Helen dataset. In a comparative experiment, these two ASMs are examined on performance in various lighting conditions and with different interference factors. The result proves the new model’s advantage under different conditions, reducing the amount of results with huge deviation.
+               </p>
+            </article>
+               <p>
+                   <img src="resources/trainASM.png" height="350px"><img src="resources/meanshape.bmp" height="350px"><br>
+                   &emsp;&emsp;The process of training a new ASM with 194 landmarks
+                   &emsp;&emsp;Mean shape of 194 landmarks<br>
+                   <br>
+                   <img src="resources/testface_stasm.jpg"><br>
+                   &emsp;&emsp;&emsp;&emsp;194-landmarks model and 78-landmarks model<br>
+                   <img src="resources/me17.png" height="300"><img src="resources/error_proportion.png" height="300"><br>
+               </p>
+       </main>
+       <footer role="contentinfo">
+            <p id="authorinfo">
+                &copy;Zeming Li<br>
+                <a href="https://github.com/zemli/ASM-WebApp">GitHub Link</a><br>
+            </p>
+            <p id="reference">
+                Reference:<br>
+                <a href="http://www.milbo.users.sonic.net/stasm/">ASM with STASM</a>&nbsp;&nbsp;
+                <a href="https://xlabsgaze.com/">Xlabs</a>
+            </p>
+        </footer>
+    </body>
+</html>

@@ -7,20 +7,33 @@
     <body>
         <header role="banner">
             <h1>ASM WebApp</h1>
-            <nav role="navigation">
+            <nav role="navigation" >
                 <ul>
-                    <li>Introduction to ASM WebApp</li>
-                    <li>Introduction to Newly Trained ASM Using Stasm</li>
-                    <li>Video Controlling with Head Pose</li>
-                    <li>Gaze Tracking</li>
+                    <li><a href="index.html">Home Page</a>
+                    <li><a href="newASM.html">Introduction to Newly Trained ASM Using Stasm</a></li>
+                    <li><a href="video_control/index.html">Video Controlling with Head Pose</a></li>
+                    <li><a href="gaze_track/gazeTrack.html">Gaze Tracking</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            
+            <div id="photolist">
+                <ul id="scorll">
+                    <a href="#"><img id="photo" src="resources/me17.png" height="350" alt=""/></a>
+                </ul>
+            </div>
         </main>
-        <footer>
-            
+        <footer role="contentinfo">
+            <p id="authorinfo">
+                &copy;Zeming Li<br>
+                <a href="https://github.com/zemli/ASM-WebApp">GitHub Link</a><br>
+            </p>
+            <p id="reference">
+                Reference:<br>
+                <a href="http://www.milbo.users.sonic.net/stasm/">ASM with STASM</a>&nbsp;&nbsp;
+                <a href="https://xlabsgaze.com/">Xlabs</a>
+            </p>
         </footer>
     </body>
+    <script type="text/javascript" src="script.js"></script>
 </html>
